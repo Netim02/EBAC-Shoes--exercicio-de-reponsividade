@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 2em 2em;
+    background-color: #5343d9;
+    color: #fff;
+    margin-bottom: 1.5em;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 2em;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li a:hover{
+    border-bottom:solid 0.1em #fff;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sobre{
+    display: flex;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.sobre img{
+    border: solid 1px #5343d9;
+    width: 450px;
+}
+
+h2 {
+    border-bottom: solid 0.1em #5343d9;
+    margin-bottom: 1em;
+    color: #5343d9;
+    font-weight: bold;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+}
+
+.produtos img{
+    max-width: 100%;
+    width: 100%;
+    border: solid 1px #5343d9;
+    margin-bottom: 1em;
+}
+
+.produtos article img{
+    
+    height: 320px;
+}
+
+article p {
+    text-align: justify;
+    margin: 1em 0;
+}
+
+.produtos button {
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    background: #5343d9;
+    color: #fff;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+button:hover{
+    background: #3e2dd6;
+}
+
+footer{
+    background: #5343d9;
+    color: #fff;
+    padding: 0.5em 0 0.5em 1em;
+}
+
+@media screen and (max-width: 767px){
+    header{
+        text-align: center;
+    }
+
+    header .container {
+        display: block;
+        max-width: 90%;
+    }
+
+    .menu ul{
+        margin-top: 1em;
+    }
+
+    .menu ul li{
+        margin: auto;
+    }
+
+    .container{
+        max-width: 90%;
+        margin-left: 0 1em;
+    }
+
+    .sobre{
+        display: block;
+        
+    }
+
+    .sobre img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .produtos{
+        display:block;
+    }
+
+    .produtos article img{
+        display: block;
+        width: 70%;
+        margin: 0 auto 1em;
+        
+    }
+
+    .produtos article{
+        text-align: center;
+    }
+
+    article p {
+        
+        margin: 0.8em 0;
+    }
+
+    .produtos button {
+        margin-bottom: 2.5em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .sobre{
+        display: block;
+    }
+
+    .sobre img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+    }
+    
+    .produtos button {
+        margin-bottom: 2.5em;
+    }
+}
+
+
+
+
+
